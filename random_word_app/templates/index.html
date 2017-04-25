@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Produce a random alphanumeric string!</h1>
+	<h2>Random Word Attempt #{{request.session.number}}</h1>
+	<div>{{request.session.word}}</div>
+	<form action='/attempt' method='post'>
+	{% csrf_token %}
+		<input type="submit" name="submit" value="Generate New Word">
+	</form>
+</body>
+</html>
