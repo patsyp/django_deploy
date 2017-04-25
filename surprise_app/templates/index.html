@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	</head>
+	<body>
+		<h1>Poem Generator</h1>
+		<h3>Generate a line of poetry made up of random words.</h2>
+	
+		<form action='/results' method='post'>
+			<h4>Enter a number to choose length.</h3>
+		{% csrf_token %}
+			<input type="text" name="number">
+			<div>
+				<input type="submit" name="submit" value="Submit">
+			</div>
+		</form>
+		<div id='container'>
+		{{poem}}
+		</div>
+	</body>
+</html>

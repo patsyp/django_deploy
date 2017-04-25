@@ -1,0 +1,20 @@
+*{
+	padding:0;
+	margin: 0;
+}
+body{
+	background-color: #b7fb19;
+	width: 970px;
+	padding:20px;
+	text-align: center;
+}
+h1{
+	margin-bottom: 15px;
+}
+form{
+	margin-top: 20px;
+}
+#container{
+	margin-top: 15px;
+	height: 30px;
+}
